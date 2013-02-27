@@ -3,3 +3,9 @@
 
 en:
   hello: "Hello world"
+
+  activerecord:
+    errors:
+      messages:
+        too_long: "is too long!"
+
