@@ -4,7 +4,7 @@
       <h2><%= pluralize(@micropost.errors.count, "error") %> prohibited this micropost from being saved:</h2>
 
       <ul>
-      <%= debug @micropost.errors %>  
+      <%#= debug @micropost.errors %>  
       <% @micropost.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
