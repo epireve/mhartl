@@ -4,7 +4,6 @@ Mhartl::Application.routes.draw do
   get "static_pages/home"
   resources :microposts
 
-
   resources :users
 
 

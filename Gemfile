@@ -31,6 +31,7 @@ group :production do
 end
 
 gem 'jquery-rails'
+gem 'capybara'
 gem 'twitter-bootstrap-rails'
 
 # To use ActiveModel has_secure_password

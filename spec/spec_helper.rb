@@ -1,3 +1,4 @@
+require 'capybara/rspec'
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 ENV["RAILS_ENV"] ||= 'test'
 require File.expand_path("../../config/environment", __FILE__)
@@ -35,4 +36,10 @@ RSpec.configure do |config|
   # the seed, which is printed after each run.
   #     --seed 1234
   config.order = "random"
+  module ::RSpec::Core
+    class ExampleGroup
+      include Capybara::DSL
+      include Capybara::RSpecMatchers
+    end
+  end
 end
